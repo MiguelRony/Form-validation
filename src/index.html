@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div id="content">
+        <form action="submit" novalidate autocomplete="off">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input name="email" id="email" type="email" required>
+                <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input name="country" id="country" type="text" required>
+                <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+                <label for="zipcode">Zip Code</label>
+                <input name="zipcode" id="zipcode" type="text" required>
+                <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input name="password" id="password" type="password" required>
+                <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+                <label for="passwordConfirm">Confirm Password</label>
+                <input name="passwordConfirm" id="passwordConfirm" type="password" required>
+                <span class="error" aria-live="polite"></span>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
